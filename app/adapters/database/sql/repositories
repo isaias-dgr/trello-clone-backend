@@ -1,0 +1,18 @@
+# app/adapters/database/repositories.py
+# from sqlalchemy.orm import Session
+# from app.adapters.database.sql.models import Task
+# from app.domain.entities import TaskCreate, TaskRead
+
+# class TaskRepository:
+#     def __init__(self, db: Session):
+#         self.db = db
+
+#     def create_task(self, task: TaskCreate) -> Task:
+#         db_task = Task(**task.dict())
+#         self.db.add(db_task)
+#         self.db.commit()
+#         self.db.refresh(db_task)
+#         return db_task
+
+#     def get_tasks(self):
+#         return self.db.query(Task).all()
